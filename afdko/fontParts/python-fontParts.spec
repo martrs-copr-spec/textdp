@@ -1,6 +1,5 @@
 %{?!python3_pkgversion:%global python3_pkgversion 3}
 
-%global _disable_source_fetch 0
 %global srcname fontParts
 
 Name:           python-%{srcname}
