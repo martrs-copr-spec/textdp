@@ -8,7 +8,7 @@ Release:        1%{?dist}
 Summary:        API for interacting with the parts of fonts
 License:        MIT
 URL:            https://github.com/robotools/%{srcname}
-Source0:        https://github.com/robotools/%{srcname}/archive/refs/tags/%{version}.tar.gz#/%{srcname}-%{version}.gz
+Source0:        https://github.com/robotools/%{srcname}/archive/refs/tags/%{version}.tar.gz#/%{srcname}-%{version}.tar.gz
 
 BuildArch:      noarch
 
