@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PosteRazor
+GenericName=Make your own poster
+Comment=Make your own poster
+Exec=PosteRazor
+Icon=PosteRazor
+Terminal=false
+Type=Application
+Categories=Graphics;Publishing;
