@@ -24,8 +24,8 @@ An easy to use, wizard like user interface guides through 5 steps.
 
 %prep
 %setup -q -c
-%patch0 -p1 -b .includes
-%patch1 -p1 -b .formatsec
+%patch 0 -p1 -b .includes
+%patch 1 -p1 -b .formatsec
 for i in CHANGES LICENSE README
 do
  sed -e 's/\r//' $i > $i.tmp
