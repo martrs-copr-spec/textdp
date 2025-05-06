@@ -5,8 +5,8 @@ Summary:        Make your own poster
 
 Group:          Applications/Publishing
 License:        GPLv3+
-URL:            http://%{name}.sourceforge.net/index.php
-Source0:        http://prdownloads.sourceforge.net/%{name}/PosteRazor-%{version}-Source.zip
+URL:            https://%{name}.sourceforge.net/index.php
+Source0:        https://prdownloads.sourceforge.net/%{name}/PosteRazor-%{version}-Source.zip
 Source1:        %{name}.desktop
 Patch0:         %{name}-%{version}-includes.patch
 Patch1:         posterazor-1.5-format-security.patch
