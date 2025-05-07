@@ -13,7 +13,7 @@ Requires:       vim-common
 Zeavim allows to use Zeal documentation browser directly from Vim
 
 %prep
-%setup -q
+%setup -q -n zeavim.vim-%{version}
 
 %build
 
