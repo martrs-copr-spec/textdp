@@ -1,0 +1,226 @@
+;; he-kbd.mim -- Hebrew input method with SIL Biblical Hebrew keyboard layout
+;; version 5.0.1
+;; v5.0.1 (C) 2020 by Martin RS modified from version 5
+;; version 5 Copyright (C) 2012 Steven Coxhead
+;;   Contact details are available at <http://www.berithroad.com/contact.html>
+;; Copyright (C) 2003, 2004, 2005
+;;   National Institute of Advanced Industrial Science and Technology (AIST)
+;;   Registration Number H15PRO112
+
+;; This v5.0.1 file modifies the version 5 of he-kbd.mim to replace
+;; ctrl־alt with shift-F and add additional vowel symbol keys.
+
+;; The copyright of the version 5 file he-kbd.mim providing a layout similar
+;; to the SIL Biblical Hebrew keyboard layout is held by Steven Coxhead.
+;; This file is intended to replace the he-kbd.mim file in the m17n library
+;; for those who prefer a keyboard that is similar to the SIL Biblical Hebrew
+;; keyboard layout.
+
+;; The original SIL Biblical Hebrew keyboard layout is created by Summer
+;; Institutes of Linguistics (SIL) Language Technology.
+
+;; The copyright of the original he-kbd.mim is held by the National Institute 
+;; of Advanced Industrial Science and Technology (AIST), and was offered as 
+;; free software as part of the m17n database under the terms of the 
+;; GNU Lesser General Public License.
+
+;; This modified file is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU Lesser General Public License
+;; as published by the Free Software Foundation, either version 2.1 of
+;; the License, or (at your option) any later version.
+
+;; The m17n library is distributed in the hope that it will be useful, but
+;; WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+;;  See the GNU Lesser General Public License for more details.
+
+;; You should have received a copy of the GNU Lesser General Public
+;; License along with the m17n library; if not, write to the Free
+;; Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+;; Boston, MA 02110-1301, USA.
+
+;; Go to <http://www.gnu.org/licenses/>
+;; for further details about the GNU Lesser General Public License.
+
+;;; Input method for Hebrew simulating the SIL Biblical Hebrew keyboard.
+
+(input-method he kbd)
+
+(description 
+ "Hebrew input method simulating the SIL Biblical Hebrew keyboard. 
+ It follows the keystrokes of the SIL Biblical Hebrew keyboard for 
+ all numbers and English punctuation marks, all Hebrew consonants, 
+ all common Hebrew vowel points, plus the maqaf, dagesh, meteg, 
+ etnahta, rafe, and sof pasuq. The accent ole is also included as it can 
+ be used as a general marker of syllabic stress in non-accented texts. 
+ Departing from the SIL Biblical Hebrew keyboard, the backslash key 
+ inputs a backslash rather than the paseq. The layout uses CTRL+ALT
+ instead of ALTGR. This input method works well with the SBL Hebrew 
+ font, but it has been observed that the dagesh needs to be entered 
+ immediately after the consonant when using the Ezra SIL font.  
+ See <http://www.sbl-site.org/Fonts/BiblicalHebrewSILManual.pdf> 
+ for a description of the SIL Biblical Hebrew keyboard.")
+
+(title "Alefbet")
+
+(map
+ (map
+  ("`" "")
+  ("1" ?1)
+  ("2" ?2)
+  ("3" ?3)
+  ("4" ?4)
+  ("5" ?5)
+  ("6" ?6)
+  ("7" ?7)
+  ("8" ?8)
+  ("9" ?9)
+  ("0" ?0)
+  ("-" ?־)
+  ("=" ?ּ)
+  ("q" ?ק)
+  ("w" ?ו)
+  ("e" ?ֶ)
+  ("r" ?ר)
+  ("t" ?ת)
+  ("y" ?י)
+  ("u" ?ֻ)
+  ("i" ?ִ)
+  ("o" ?ֹ)
+  ("p" ?פ)
+  ("[" "]")
+  ("]" "[")
+  ("\\" "\\")
+  ("a" ?ַ)
+  ("s" ?ס)
+  ("d" ?ד)
+  ("f" ?שׂ)
+  ("f=" "שּׂ")
+  ("f+" "שּׂ")
+  ("g" ?ג)
+  ("h" ?ה)
+  ("j" ?שׁ)
+  ("j=" "שּׁ")
+  ("j+" "שּׁ")
+  ("k" ?כ)
+  ("l" ?ל)
+  (";" ?ְ)
+  ("'" "'")
+  ("z" ?ז)
+  ("x" ?ח)
+  ("c" ?צ)
+  ("v" ?ט)
+  ("b" ?ב)
+  ("n" ?נ)
+  ("m" ?מ)
+  ("," ?,)
+  ("." ?.)
+  ("/" "/")
+
+  ("~" "")
+  ("!" ?!)
+  ("@" "")
+  ("#" "")
+  ("$" "")
+  ("%" "")
+  ("^" "")
+  ("&" "")
+  ("*" "")
+  ("(" ")")
+  (")" "(")
+  ("_" "–")
+  ("+" ?ּ)
+  ("Q" "")
+  ("W" "")
+  ("E" ?ֵ)
+  ("R" "")
+  ("T" "")
+  ("Y" "")
+  ("U" "")
+  ("I" "")
+  ("O" ?ֺֺ)
+  ("P" ?ף)
+  ("{" "}")
+  ("}" "{")
+  ("|" "")
+  ("A" ?ָ)
+  ("S" ?ש)
+  ("D" "")
+  ("F" "")
+  ("G" "")
+  ("H" "")
+  ("J" "")
+  ("K" ?ך)
+  ("L" "")
+  ("Z" "")
+  ("X" "")
+  ("C" ?ץ) 
+  ("V" "")
+  ("B" "")
+  ("N" ?ן)
+  ("M" ?ם)
+  ("<" ?ע)
+  (">" ?א)
+  ("?" "?")
+
+  ("F`" "")
+  ("F1" "ֽ")
+  ("F2" "֠")
+  ("F3" "֣")
+  ("F4" "֓")
+  ("F5" "֔")
+  ("F6" "֕")
+  ("F7" "֖")
+  ("F8" "֘")
+  ("F9" "֙")
+  ("F0" "֜")
+  ("F-" "—")
+  ("F=" "֑")
+  ("Fo" "")
+  
+  ("Fe" "֓")
+  ("Fa" "")
+  ("Fg" "")
+  ("Fh" "")
+  ("F;" ";")
+  ("F'" "֝")
+  ("F," "֛")
+  ("F." "֤")
+  ("F/" "֥")
+  
+  ("F!" "֩")
+  ("F@" "֟")
+  ("F#" "֬")
+  ("F$" "֡")
+  ("F%" "֧")
+  ("F^" "")
+  ("F&" "֯")
+  ("F*" "֗")
+  ("F_" "ֿ")
+  ("F+" "֢")
+  ("FE" "ֱ")
+  ("FO" "ֳ")
+  ("FP" "")
+  ("F{" "")
+  ("F}" "")
+  ("F|" "֫")
+  ("FA" "ֲ")
+  ("FG" "")
+  ("FH" "")
+  ("F:" "׃")
+  ("F\"" "֞")
+  ("FM" "")
+  ("F<" "֚")
+  ("F>" "֫")
+  ("F?" "֦")
+
+  ))
+
+(state
+ (init
+  (map)))
+
+;; Local Variables:
+;; coding: utf-8
+;; mode: lisp
+;; End:
