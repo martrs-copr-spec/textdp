@@ -62,7 +62,6 @@ export SETUPTOOLS_SCM_PRETEND_VERSION=%version
 %check
 export SETUPTOOLS_SCM_PRETEND_VERSION=%version
 # use what your upstream is using
-%{__python3} setup.py test
 PYTHONPATH=build/lib %{__python3} -m pytest
 
 
