@@ -4,7 +4,7 @@
 
 Name:           python-fontPens
 Version:        0.3.0
-Release:        10%{?dist}
+Release:        1%{?dist}
 Summary:        implement the pen protocol for manipulating glyphs
 License:        BSD
 URL:            https://github.com/robotools/fontPens
